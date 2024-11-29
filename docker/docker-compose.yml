@@ -1,0 +1,14 @@
+services:
+  node:
+    build:
+      dockerfile: node/Dockerfile
+    user: "${UID}:${GID}"
+    environment:
+      TZ: UTC
+    ports:
+      - "9229:9229"
+      - "3000:3000"
+    working_dir: /app/
+    command: tail -f /dev/null
+    volumes:
+      - ../:/app/
