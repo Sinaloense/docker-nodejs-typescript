@@ -4,7 +4,7 @@
     {
       "label": "Shell Docker Node",
       "type": "shell",
-      "command": "cd docker && docker-compose up -d && docker-compose exec node sh",
+      "command": "cd .devcontainer && docker-compose up -d && docker-compose exec node sh",
       "problemMatcher": [],
       "group": "build",
       "detail": "Shell de Node usando Docker Compose"
@@ -12,7 +12,7 @@
     {
       "label": "Debug Docker Node",
       "type": "shell",
-      "command": "cd docker && docker-compose up -d && docker-compose exec node pnpm debug",
+      "command": "cd .devcontainer && docker-compose up -d && docker-compose exec node pnpm debug",
       "problemMatcher": [],
       "group": "build",
       "detail": "pnpm debug de Node usando Docker Compose"
@@ -20,7 +20,7 @@
     {
       "label": "Build Docker Node",
       "type": "shell",
-      "command": "cd docker && docker-compose up -d && docker-compose exec node pnpm build",
+      "command": "cd .devcontainer && docker-compose up -d && docker-compose exec node pnpm build",
       "problemMatcher": [],
       "group": "build",
       "detail": "pnpm build de Node usando Docker Compose"
@@ -28,7 +28,7 @@
     {
       "label": "Start Docker Node",
       "type": "shell",
-      "command": "cd docker && docker-compose up -d && docker-compose exec node pnpm start",
+      "command": "cd .devcontainer && docker-compose up -d && docker-compose exec node pnpm start",
       "problemMatcher": [],
       "group": "build",
       "detail": "pnpm start de Node usando Docker Compose"
