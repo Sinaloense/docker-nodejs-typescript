@@ -2,7 +2,7 @@
     "name": "NodeJS Typescript",
     "dockerComposeFile": "docker-compose.yml",
     "service": "node",
-    "workspaceFolder": "/app",
+    "workspaceFolder": "/app/",
     "customizations": {
       "vscode": {
         "settings": {
